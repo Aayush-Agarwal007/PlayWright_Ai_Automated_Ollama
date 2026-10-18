@@ -1,23 +1,33 @@
-.venv
+# --- Personal data (never commit) ---
 profile.json
-@"
-# Virtual environment
+config.json
+logs/
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- Virtual environments ---
 .venv/
 venv/
 env/
 
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-.pytest_cache/
-.mypy_cache/
+# --- Packaging output ---
+build/
+dist/
+*.spec
+*.exe
 
-# IDE
+# --- Editors / OS ---
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db
-"@ | Out-File -Encoding utf8 .gitignore
+
+# --- Temp files from atomic profile saves ---
+*.json.tmp
