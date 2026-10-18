@@ -1,0 +1,13 @@
+{
+  "ollama_model": "qwen2.5:3b",
+  "ollama_base_url": "http://127.0.0.1:11434",
+  "cdp_url": "http://127.0.0.1:9222",
+  "request_timeout_seconds": 120,
+  "ollama_retries": 2,
+  "max_questions_per_ai_call": 4,
+  "min_match_confidence": 0.7,
+  "max_answer_chars": 1500,
+  "mark_generated_drafts": false,
+  "form_ready_timeout_seconds": 30,
+  "enable_notifications": true
+}
